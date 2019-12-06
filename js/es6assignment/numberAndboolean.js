@@ -4,9 +4,9 @@ const division = () => {
     p('\n-----new scope-----\n')
 }
 
-let {length: len} = 'string'
+let { length: len } = 'string'
 p(len)
 
-let {toString: numToString} = 123
+let { toString: numToString } = 123
 p(numToString === Number.prototype.toString)
 

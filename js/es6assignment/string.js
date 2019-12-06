@@ -4,7 +4,7 @@ const division = () => {
     p('\n-----new scope-----\n')
 }
 
-const [a,b,c,d,e] = 'hello world'
+const [a, b, c, d, e] = 'hello world'
 p(a)
 p(b)
 p(c)

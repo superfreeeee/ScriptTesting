@@ -59,5 +59,5 @@ class A {
         System.out.println("call createString");
         return "string 3";
     }
-    
+
 }
