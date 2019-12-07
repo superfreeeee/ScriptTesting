@@ -12,3 +12,19 @@ p(r1)
 
 const r2 = [[1, 2], [3, 4]].map(([x, y]) => (x + y))
 p(r2)
+
+division()
+
+// x, y 缺省時默認為0
+// 函數缺省時默認為空對象
+function move({ x = 0, y = 0 } = {}) {
+    return [x, y]
+}
+
+p(move({ x: 3, y: 8 }))
+p(move({ x: 3 }))
+p(move({}))
+p(move())
+
+
+

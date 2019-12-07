@@ -11,13 +11,14 @@ public class ConstructionTest {
 
     public static void f1() {
         d1("f1: A a = new A();");
-        A a = new A();
+        new A();
         d2();
     }
 
     public static void f2() {
         d1("f2: A.staticString;");
         String s = A.staticString;
+        System.out.println(s);
         d2();
     }
 
