@@ -1,0 +1,11 @@
+{
+    "function": {
+        "prefix": "func",
+        "body": [
+            "function ${1:function} {",
+            "\t$2",
+            "}"
+        ],
+        "description": "definition snippet for function"
+    }
+}
