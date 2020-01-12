@@ -1,0 +1,16 @@
+.border {
+    width: 80%;
+    margin: 100px 10% 0;
+}
+
+.wrapper{
+    width: 300px;
+    margin: 0 auto;
+    border-style: black solid;
+    border: 1px 0;
+}
+
+.input {
+    display: none;
+}
+

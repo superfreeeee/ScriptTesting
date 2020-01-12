@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    background-color: #242424;
+}
+
+input {
+    outline-style: none;
+    border: none;
+    background-color: unset;
+}

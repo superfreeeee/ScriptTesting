@@ -1,0 +1,14 @@
+{
+    "main": {
+        "prefix": "init|main",
+        "body": [
+            "#include<stdio.h>",
+            "",
+            "int main() {",
+            "\t$1",
+            "}",
+            ""
+        ],
+        "description": "init main function with standard io library"
+    }
+}
