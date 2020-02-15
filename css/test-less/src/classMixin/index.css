@@ -1,0 +1,7 @@
+/* 類選擇器 Mixin */
+.c22 {
+  background-color: #00ff73;
+}
+.c22:hover {
+  outline: red 1px solid;
+}

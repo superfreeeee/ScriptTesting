@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="test.css"/>
+    <!-- <link rel="stylesheet" href="test.vue"> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>HTML實作</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body id="main-board">
+    <!-- 頂部橫幅 -->
+    <!-- <header1 :prop="header1"></header1> -->
+    <div class="header" id="header1">
+        <div id="header1-inner">
+            <header1-block :prop="prop_left"></header1-block>
+            <header1-block :prop="prop_right"></header1-block>
+        </div>
+    </div>
+    <!-- 頂部橫幅2(logo,search) -->
+    <div class="header" id="header2">
+        <div id="header2-inner">
+            <div id="header2-left">
+                <div id="header2-left-in">
+                    <img src="img/logo.png" alt="picture not found" id="logo"/>
+                </div>
+            </div>
+            <div id="header2-right">
+                <div id="header2-right-in1">
+                    <a href="">
+                        <img src="img/search.png" alt="picture not found" id="search">
+                    </a>
+                </div>
+                <div id="header2-right-in2">
+                    <img src="img/slogan.png" alt="picture not found" id="slogan">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 下拉選單 -->
+    <div class="header">
+        <div id="header3-inner">
+            <header3-banner :prop="messages"></header3-banner>
+            <div id="header3-list">
+                <div id="header3-list-inner">
+                    <div class="header3-list-sample" v-for="item in innerItems">
+                        <li style="display:block;text-align: center;" v-for="item in item.blocks">
+                            <a href="" class="header3-list-text">
+                                <span>{{ item }}</span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 輪播圖 -->
+    <div class="header" id="banner">
+        <div id="banner-content">
+            <div id="banner-container">
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp1"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp2"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp3"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp4"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp5"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+            </div>
+            <div id="banner-title">
+
+            </div>
+            <a href="" class="banner-nav" id="banner-nav-left"><</a>
+            <a href="" class="banner-nav" id="banner-nav-right">></a>
+        </div>
+    </div>
+    <!-- 主界面(新聞,活動日期) -->
+    <div id="container">
+        <div id="container-inner">
+            <div id="container-top">
+                <div id="container-top-left">
+                    <div id="container-top-left-in">
+                        <div class="container-titlebar">
+                            <h3 class="container-titlebar-title">
+                                <span class="container-titlebar-title">南大新聞</span>
+                            </h3>
+                            <div class="container-titlebar-botton">
+                                <a href="" class="titlebar-botton">
+                                    <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="container-top-left-bottom">
+                            <div style="width: 849px;">
+                                <template v-for="item in items">
+                                    <div class="news">
+                                        <div class="news2">
+                                            <a href="" class="news2-text1">{{ item.title }}</a>
+                                        </div>
+                                        <div class="news2-text2">{{ item.date }}</div>
+                                        <div class="news2-text3">
+                                            <a href="" class="news2-text3">{{ item.content }}</a>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container-top-right">
+                    <div class="container-titlebar">
+                        <h3 class="container-titlebar-title">
+                            <span class="container-titlebar-title">公告通知</span>
+                        </h3>
+                        <div class="container-titlebar-botton">
+                            <a href="" class="titlebar-botton">
+                                <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-top-right-inner">
+                        <div class="container-top-right-in">
+                            <ul class="container-top-right-ul">
+                                <!-- 主頁面右上方-通知列 -->
+                                <template v-for="item in items">
+                                    <li class="container-top-right-li">
+                                        <div class="notice-date">
+                                            <div class="notice-day">{{ item.day }}</div>
+                                            <div class="notice-month">{{ item.month }}</div>
+                                        </div>
+                                        <div class="notice-text">
+                                            <a href="" class="notice-text">{{ item.message }}}</a>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container-bottom">
+                <div id="container-bottom-left">
+                    <div class="container-titlebar">
+                        <h3 class="container-titlebar-title">
+                            <span class="container-titlebar-title">科學研究</span>
+                        </h3>
+                        <div class="container-titlebar-botton">
+                            <a href="" class="titlebar-botton">
+                                <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;margin-top: 4px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-bottom-left-bottom">
+                        <ul class="container-bottom-left-ul">
+                            <template v-for="item in items">
+                                <li class="container-bottom-left-li">
+                                    <div class="news-board">
+                                        <a href="">
+                                            <img :src="item.src" alt="" class="research">
+                                        </a>
+                                        <div class="news-text">
+                                            <a href="" class="news-text">{{ item.message }}</a>
+                                        </div>
+                                        <div class="news-back"></div>
+                                    </div>
+                                </li>
+                            </template> 
+                        </ul>
+                    </div>
+                </div>
+                <div id="container-bottom-right">
+                    <div class="container-bottom-right-top">
+                        <div class="container-titlebar">
+                            <h3 class="container-titlebar-title">
+                                <span class="container-titlebar-title">校園生活</span>
+                            </h3>
+                            <div class="container-titlebar-botton">
+                                <a href="" class="titlebar-botton">
+                                    <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container-bottom-right-top-text">
+                            <ul>
+                                <li>
+                                    <p  class="container-bottom-right-title">
+                                        <a href="">南農大調研組來我校調研信息化工作</a>
+                                    </p>
+                                    <p class="container-bottom-right-text">
+                                        <a href="" style="text-decoration: none;color: #333;">2019年3月7日，南京農業大學圖書館館長、圖書與信息中心主任倪峰，黨總支書記查貴庭一行來到我校信息化建設...</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-bottom-right-bottom">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 域外鏈接 -->
+    <div id="container-m">
+        <div id="container-m-inner">
+            <div id="container-m-main">
+                <div id="container-m-left">
+                    <div id="container-m-left-in">
+                        <ul id="container-m-left-ul">
+                            <template v-for="item in items">
+                                <li class="container-m-left-li" style="width: 140px;">
+                                    <a href="">
+                                        <img :src="item.src" alt="" class="container-m-left-img">
+                                    </a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+                <div id="container-m-right">
+                    <div id="container-m-right-in">
+                        <template v-for="item in items">
+                            <a href="" class="container-m-right-block">
+                                <span class="icon">
+                                    <img :src="item.image" alt="not found" class="icon"></img>
+                                </span>
+                                <p class="icon">{{ item.message }}</p>
+                            </a>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部橫幅(聯絡電話,校區地址) -->
+    
+    <div class="header" id="foot">
+        <div id="foot-inner">
+            <foot-address :prop="address"></foot-address>
+            <div id="foot-logo">
+                <img src="img/foot-logo.png" alt="" id="foot-logo">
+            </div>
+            <foot-share :prop="src"></foot-share>
+        </div>
+    </div>
+    <!-- 底部橫幅(版權所有) -->
+    <div class="header" id="foot-m">
+        <div id="foot-m-inner">
+            <span>Copyright@Superfreeeee All Right Reserved</span>
+            <span>|</span>
+            <span>南大软件2019.3.14</span>
+            <span style="margin-left: 3px;">
+                <a href="mailto:superfreeeee@gmail.com" class="foot-m-item">superfreeeee@gmail.com</a>
+            </span>
+        </div>
+    </div>
+    <!-- 引入js文件 -->
+    <script src="test.js"></script>
+    <script src="test1.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* 嵌套 */
+.container h1 {
+  font-size: 12px;
+}
+.container p {
+  font-size: 14px;
+}
+.container .my-class h1 {
+  font-size: 16px;
+}
+.container .my-class p {
+  font-size: 18px;
+}

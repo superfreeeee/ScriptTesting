@@ -1,0 +1,19 @@
+/* Guard 保護命名空間 */
+@c24-color1: blue;
+@c24-color2: red;
+#space1 when (@c24-color1 = blue) {
+    .mixin() {
+        color: red;
+    }
+}
+#space2 when (@c24-color2 = red) {
+    .mixin() {
+        color: blue;
+    }
+}
+.c24 {
+    #space1 .mixin;
+}
+.c24-2 {
+    #space2 .mixin;
+}

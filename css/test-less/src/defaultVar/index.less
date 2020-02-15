@@ -1,0 +1,26 @@
+/* 默認變量 by test.less */
+@import './default.less';
+.c12 {
+    .primary {
+        color: @primary-color;
+    }
+
+    .danger {
+        color: @danger-color;
+    }
+
+    .success {
+        color: @success-color;
+    }
+}
+
+.c13 {
+    .success {
+        color: @success-color;
+    }
+
+    @success-color: #000000;
+    .success2 {
+        color: @success-color;
+    }
+}

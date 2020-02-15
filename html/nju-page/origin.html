@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./test.css"/>
+    <!-- <link rel="stylesheet" href="test.vue"> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>HTML實作</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body id="main-board">
+    <!-- 頂部橫幅 -->
+    <div class="header" id="header1">
+        <div id="header1-inner">
+            <div id="header1-left">
+                <ul class="header1-ul">
+                    <li class="header1-li">
+                        <a class="header1-link" href="">學生</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">教職工</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">考生</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">校友</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">訪客</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="header1-right">
+                <ul class="header1-ul">
+                    <li class="header1-li">
+                        <a class="header1-link" href="">信息公開</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">學生郵箱</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">教師郵箱</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">捐贈</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">OA</a>
+                    </li>
+                    <li class="header1-li">
+                        <a class="header1-link" href="">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 頂部橫幅2(logo,search) -->
+    <div class="header" id="header2">
+        <div id="header2-inner">
+            <div id="header2-left">
+                <div id="header2-left-in">
+                    <img src="img/logo.png" alt="picture not found" id="logo"/>
+                </div>
+            </div>
+            <div id="header2-right">
+                <div id="header2-right-in1">
+                    <a href="">
+                        <img src="img/search.png" alt="picture not found" id="search">
+                    </a>
+                </div>
+                <div id="header2-right-in2">
+                    <img src="img/slogan.png" alt="picture not found" id="slogan">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 下拉選單 -->
+    <div class="header" id="header3">
+        <div id="header3-inner">
+            <div id="header3-banner">
+                <div id="header3-banner-inner">
+                    <ul id="header3-banner-ul">
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">南大概況</span>
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">院系部門</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">招生就業</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">人才培養</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">科學研究</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">合作交流</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">文化生活</span>                                
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                        <li id="header3-banner-li">
+                            <a href="" id="header3-link">
+                                <span id="header3-text">校園服務</span>                                    
+                            </a>
+                            <img src="img/listbottom.png" alt="" id="listbottom">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id="header3-list">
+
+            </div> -->
+        </div>
+    </div>
+    <!-- 輪播圖 -->
+    <div class="header" id="banner">
+        <div id="banner-content">
+            <div id="banner-container">
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp1"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp2"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp3"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp4"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+                <div class="banner-item">
+                    <a href="">
+                        <div class="temp" id="temp5"></div>
+                        <!-- <img src="img/" alt="" id="banner-item"> -->
+                    </a>
+                </div>
+            </div>
+            <div id="banner-title">
+
+            </div>
+            <a href="" class="banner-nav" id="banner-nav-left"><</a>
+            <a href="" class="banner-nav" id="banner-nav-right">></a>
+        </div>
+    </div>
+    <!-- 主界面(新聞,活動日期) -->
+    <div id="container">
+        <div id="container-inner">
+            <div id="container-top">
+                <div id="container-top-left">
+                    <div id="container-top-left-in">
+                        <div class="container-titlebar">
+                            <h3 class="container-titlebar-title">
+                                <span class="container-titlebar-title">南大新聞</span>
+                            </h3>
+                            <div class="container-titlebar-botton">
+                                <a href="" class="titlebar-botton">
+                                    <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="container-top-left-bottom">
+                            <div style="width: 849px;">
+                                <div class="news">
+                                    <div class="news2">
+                                        <a href="" class="news2-text1">我校周志華教授獲IEEE計算機學會Edward J. McCluskey技術成就獎</a>
+                                    </div>
+                                    <div class="news2-text2">2019-03-17</div>
+                                    <div class="news2-text3">
+                                        <a href="" class="news2-text3">IEEE計算機學會近日宣佈，南京大學計算機科學與技術系主任、人工智能學院院長周志華教授被授予IEEE計算機學會2019年度Edward J. McCluskey Technical Achievement Award (https://www.computer.org/press-room/2019-...</a>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="news2">
+                                        <a href="" class="news2-text1">我校舉行”建功立業新時代“輔導員素質能力比賽</a>
+                                    </div>
+                                    <div class="news2-text2">2019-03-17</div>
+                                    <div class="news2-text3">
+                                        <a href="" class="news2-text3">3月15日，我校舉辦”建功立業新時代“輔導員素質能力比賽決賽，校黨委副書記薛海林，校黨委常委、組織部部長郭隨平，相關部門負責同志出席比賽並擔任評委。本次輔導員素質能力比賽分為兩個階段。第一階段為筆試，全...</a>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="news2">
+                                        <a href="" class="news2-text1">推進名城名校深度融合發展 南京大學蘇州校區落戶蘇州高新區</a>
+                                    </div>
+                                    <div class="news2-text2">2019-03-16</div>
+                                    <div class="news2-text3">
+                                        <a href="" class="news2-text3">為深入實施名城名校融合發展戰略，3月16日，南京大學與蘇州市人民政府在寧簽署全面戰略合作暨南京大學蘇州校區建設協議，雙方將在促進本科教育、研究生培養、國際化辦學、產學研協同創新等方面加強戰略合作，加快推...</a>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="news2">
+                                        <a href="" class="news2-text1">我校召開2019年本科招生工作推進會</a>
+                                    </div>
+                                    <div class="news2-text2">2019-03-16</div>
+                                    <div class="news2-text3">
+                                        <a href="" class="news2-text3">為學習貫徹中共南京大學第十四屆委員會第五次全體（擴大）會議暨新學期工作會精神，推進落實我校2019年本科招生工作“一增一提一突破”的工作任務，3月15日，我校2019年本科招生工作推進會在行政北樓128會議室召開。...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container-top-right">
+                    <div class="container-titlebar">
+                        <h3 class="container-titlebar-title">
+                            <span class="container-titlebar-title">公告通知</span>
+                        </h3>
+                        <div class="container-titlebar-botton">
+                            <a href="" class="titlebar-botton">
+                                <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-top-right-inner">
+                        <div class="container-top-right-in">
+                            <ul class="container-top-right-ul">
+                                <li class="container-top-right-li">
+                                    <div class="notice-date">
+                                        <div class="notice-day">15</div>
+                                        <div class="notice-month">2019-03</div>
+                                    </div>
+                                    <div class="notice-text">
+                                        <a href="" class="notice-text">校領導鼓樓校區值班表（3月18日--3月22日）</a>
+                                    </div>
+                                </li>
+                                <li class="container-top-right-li">
+                                    <div class="notice-date">
+                                        <div class="notice-day">08</div>
+                                        <div class="notice-month">2019-03</div>
+                                    </div>
+                                    <div class="notice-text">
+                                        <a href="" class="notice-text">校領導鼓樓校區值班表（3月11日--3月15日）</a>
+                                    </div>
+                                </li>
+                                <li class="container-top-right-li">
+                                    <div class="notice-date">
+                                        <div class="notice-day">03</div>
+                                        <div class="notice-month">2019-03</div>
+                                    </div>
+                                    <div class="notice-text">
+                                        <a href="" class="notice-text">校領導鼓樓校區值班表（3月4日--3月8日）</a>
+                                    </div>
+                                </li>
+                                <li class="container-top-right-li" style="border-bottom: none;">
+                                    <div class="notice-date">
+                                        <div class="notice-day">06</div>
+                                        <div class="notice-month">2019-01</div>
+                                    </div>
+                                    <div class="notice-text">
+                                        <a href="" class="notice-text">黨委辦公室 校長辦公室關於2019年寒假工作的通知</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container-bottom">
+                <div id="container-bottom-left">
+                    <div class="container-titlebar">
+                        <h3 class="container-titlebar-title">
+                            <span class="container-titlebar-title">科學研究</span>
+                        </h3>
+                        <div class="container-titlebar-botton">
+                            <a href="" class="titlebar-botton">
+                                <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;margin-top: 4px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-bottom-left-bottom">
+                        <ul class="container-bottom-left-ul">
+                            <li class="container-bottom-left-li">
+                                <div class="news-board">
+                                    <a href="">
+                                        <img src="img/research1.png" alt="" class="research">
+                                    </a>
+                                    <div class="news-text">
+                                        <a href="" class="news-text">PNAS論文報道潘丙才教授課題組在納米水處理技術及原理方面的研究新進展</a>
+                                    </div>
+                                    <div class="news-back"></div>
+                                </div>
+                            </li>
+                            <li class="container-bottom-left-li">
+                                <div class="news-board">
+                                    <a href="">
+                                        <img src="img/research2.png" alt="" class="research">
+                                    </a>
+                                    <div class="news-text">
+                                        <a href="" class="news-text">《自然》刊登南京大學戈惠明、譚仁祥和梁勇團隊研究成果自然界中首例催化[6+4]環...</a>
+                                    </div>
+                                    <div class="news-back"></div>
+                                </div>
+                            </li>
+                            <li class="container-bottom-left-li">
+                                <div class="news-board">
+                                    <a href="">
+                                        <img src="img/research3.png" alt="" class="research">
+                                    </a>
+                                    <div class="news-text">
+                                        <a href="" class="news-text">張利劍教授課題組在Phys. Rev. Lett.發表經典/量子系統互文性研究成果</a>
+                                    </div>
+                                    <div class="news-back"></div>
+                                </div>
+                            </li>
+                            <li class="container-bottom-left-li">
+                                <div class="news-board">
+                                    <a href="">
+                                        <img src="img/research4.png" alt="" class="research">
+                                    </a>
+                                    <div class="news-text">
+                                        <a href="" class="news-text">李承輝、左景林等在高強度自修復材料方面取得新進展</a>
+                                    </div>
+                                    <div class="news-back"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="container-bottom-right">
+                    <div class="container-bottom-right-top">
+                        <div class="container-titlebar">
+                            <h3 class="container-titlebar-title">
+                                <span class="container-titlebar-title">校園生活</span>
+                            </h3>
+                            <div class="container-titlebar-botton">
+                                <a href="" class="titlebar-botton">
+                                    <img src="img/more-botton.png" alt="" style="width: 22px;height: 30px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container-bottom-right-top-text">
+                            <ul>
+                                <li>
+                                    <p  class="container-bottom-right-title">
+                                        <a href="">南農大調研組來我校調研信息化工作</a>
+                                    </p>
+                                    <p class="container-bottom-right-text">
+                                        <a href="" style="text-decoration: none;color: #333;">2019年3月7日，南京農業大學圖書館館長、圖書與信息中心主任倪峰，黨總支書記查貴庭一行來到我校信息化建設...</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-bottom-right-bottom">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 域外鏈接 -->
+    <div id="container-m">
+        <div id="container-m-inner">
+            <div id="container-m-main">
+                <div id="container-m-left">
+                    <div id="container-m-left-in">
+                        <ul id="container-m-left-ul">
+                            <li class="container-m-left-li" style="width: 148px;">
+                                <a href="">
+                                    <img src="img/container-m-left1.png" alt="" class="container-m-left-img" style="max-width: 152px;max-height: 105px;">
+                                </a>
+                            </li>
+                            <li class="container-m-left-li">
+                                <a href="">
+                                    <img src="img/container-m-left2.png" alt="" class="container-m-left-img">
+                                </a>
+                            </li>
+                            <li class="container-m-left-li">
+                                <a href="">
+                                    <img src="img/container-m-left3.png" alt="" class="container-m-left-img">
+                                </a>
+                            </li>
+                            <li class="container-m-left-li">
+                                <a href="">
+                                    <img src="img/container-m-left4.png" alt="" class="container-m-left-img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="container-m-right">
+                    <div id="container-m-right-in">
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right1.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">電子郵箱</p>
+                        </a>
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right2.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">辦公系統</p>
+                        </a>
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right3.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">新聞網</p>
+                        </a>
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right4.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">小百合BBS</p>
+                        </a>
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right5.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">校友總會</p>
+                        </a>
+                        <a href="" class="container-m-right-block">
+                            <span class="icon">
+                                <img src="img/container-m-right6.png" alt="" class="icon">
+                            </span>
+                            <p class="icon">基金會</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部橫幅(聯絡電話,校區地址) -->
+    <div class="header" id="foot">
+        <div id="foot-inner">
+            <div id="foot-address">
+                <div id="foot-address-board">
+                    <ul id="foot-address-ul">
+                        <li class="foot-address-li">
+                            <p class="address-text">
+                                <span class="address-title">仙林校區</span><br/>
+                                南京市栖霞區仙林大道163號<br/>
+                                (86)-25-89683186<br/>
+                                (86)-25-83302728（fax)<br/>
+                                210023
+                            </p>
+                        </li>
+                        <li class="foot-address-li">
+                            <p class="address-text">
+                                <span class="address-title">鼓樓校區</span><br/>
+                                南京市鼓樓區漢口路22號<br/>
+                                (86)-25-83593186<br/>
+                                (86)-25-83302728（fax)<br/>
+                                210093
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="foot-logo">
+                <img src="img/foot-logo.png" alt="" id="foot-logo">
+            </div>
+            <div id="foot-share">
+                <ul id="foot-share-ul">
+                    <li id="foot-share-li">
+                        <a href="" class="share">
+                            <img src="img/foot-share-p1.png" alt="" class="foot-share-p">
+                        </a>
+                    </li>
+                    <li id="foot-share-li">
+                        <a href="" class="share">
+                            <img src="img/foot-share-p2.png" alt="" class="foot-share-p" style="max-width: 47px;max-height: 48px;margin-left: -4px;">
+                        </a>
+                    </li>
+                    <li id="foot-share-li">
+                        <a href="" class="share">
+                            <img src="img/foot-share-p3.png" alt="" class="foot-share-p" style="max-width: 47px;max-height: 48px;margin-left: -4px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部橫幅(版權所有) -->
+    <div class="header" id="foot-m">
+        <div id="foot-m-inner">
+            <span>Copyright@Superfreeeee All Right Reserved</span>
+            <span>|</span>
+            <span>南大软件2019.3.14</span>
+            <span style="margin-left: 3px;">
+                <a href="mailto:superfreeeee@gmail.com" class="foot-m-item">superfreeeee@gmail.com</a>
+            </span>
+        </div>
+    </div>
+    <!-- 引入js文件 -->
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>原生javascript</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body style="width: 100%;background: white;">
+        <div id="temp"></div>
+        <div id="temp2"></div>
+        <button onclick="myfunction()">click here</button>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #temp{
+                background-color: black;
+                width: 100%;
+                height: 50px;
+                border: 3px solid purple;
+            }
+            #temp2
+            {
+                background-color: green;
+                position: relative;
+                width: 100%;
+                height: 0px;
+            }
+        </style>
+        <script>
+            var tag = false;
+            function myfunction(){
+                var item = document.getElementById("header3-list");
+                var times = 0;
+                var range;
+                set_id = setInterval(function(){
+                    if(times >= 26){
+                        clearInterval(set_id);
+                        tag=!tag;
+                    }{
+                        if(!tag){
+                            i+=10;
+                        }else{
+                            i-=10;
+                        }
+                        range= i+"px";
+                        item.style.height = range;
+                    }
+                    times++;
+                },10);
+            }
+        </script>
+    </body>
+</html>

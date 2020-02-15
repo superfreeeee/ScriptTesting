@@ -1,0 +1,11 @@
+/* 參數默認值 */
+.c26-mixin(@color) {
+    color: @color;
+}
+.c26-mixin(@color; @padding: 2) {
+    color: @color;
+    padding: @padding;
+}
+.c26 {
+    .c26-mixin(#ffffff);
+}

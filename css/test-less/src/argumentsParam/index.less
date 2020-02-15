@@ -1,0 +1,17 @@
+.mixin(@x: 0; @y: 0; @height: 3px;@width: 3px) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.c1 {
+    .mixin;
+}
+
+.c2 {
+    .mixin(@height: 2px, @width: 2px)
+}
+
+.c3 {
+    .mixin(2px, 2px);
+}

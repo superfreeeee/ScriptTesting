@@ -1,0 +1,13 @@
+/* 命名空間 */
+@c4-color: #FF0000;
+.c4-1 {
+    .c4-2 {
+        .c4-3(@param) {
+            color: @param;
+            font-size: 100px;
+        }
+    }
+}
+.c4 {
+    .c4-1 > .c4-2 > .c4-3(@c4-color);
+}

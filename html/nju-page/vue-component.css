@@ -1,0 +1,35 @@
+.banner1
+{
+    background-color: black;
+    height: "100px";
+    width: 100%;
+}
+#header1-left
+{
+    height: 39px;
+    width: 280px;
+    float: left;
+    margin-left: 12px;
+    background-color: #fff;
+}
+.header
+{
+    background: #63065f;
+    width: 100%;
+}
+#header1
+{
+    background-color: #1d011b; 
+    height: 39px;
+}
+#header1-inner
+{
+    width: 1190px;
+    height: 39px;
+    margin: 0px auto;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}

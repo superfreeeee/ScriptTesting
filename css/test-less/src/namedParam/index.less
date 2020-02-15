@@ -1,0 +1,8 @@
+.mixin(@bgc; @color: red) {
+    background-color: @bgc;
+    color: @color;
+}
+
+.c1 {
+    .mixin(@bgc: blue, @color: green)
+}

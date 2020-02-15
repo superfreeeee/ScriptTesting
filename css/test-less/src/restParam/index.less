@@ -1,0 +1,9 @@
+.mixin(@color: red, @rest...) {
+    color: @color;
+    height: @rest;
+    width: @arguments;
+}
+
+.c1 {
+    .mixin(blue, 0px, 1px);
+}

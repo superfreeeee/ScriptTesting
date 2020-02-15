@@ -1,0 +1,29 @@
+.mixin(dark; @color) {
+    color: darken(@color, 15%);
+}
+
+.mixin(lighten; @color) {
+    color: lighten(@color, 15%);
+}
+
+.mixin(@color) {
+    color: @color;
+}
+
+@color: #FF0000;
+
+@color-new: dark;
+
+.c1 {
+    .mixin(@color-new; @color);
+}
+
+@color-new2: lighten;
+
+.c2 {
+    .mixin(@color-new2; @color);
+}
+
+.c3 {
+    .mixin(@color);
+}

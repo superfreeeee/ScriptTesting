@@ -1,0 +1,10 @@
+.mixin(@color) {
+    .mixin2() {
+        color: @color;
+    }
+}
+
+.c1 {
+    .mixin(blue);
+    .mixin2();
+}

@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(241, 241, 241);
+}
+div
+{
+    display: block;
+}
+#main-banner
+{
+    height: 50px;
+    background-color: rgba(0, 110, 255, 0.829);
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: inherit;
+}
+#main-container
+{
+    margin-top: 30px;
+    /* background-color: rgb(134, 134, 207); */
+}
+.board
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+.search
+{
+    float: none;
+    line-height: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.small-title
+{
+    line-height: 30px;
+    font-size: 30px;
+}
+#submit
+{
+    cursor: pointer;
+    margin-left: 0;
+    outline: black;
+}
+#info-board
+{
+    float: left;
+    max-width: 800px;
+    min-height: 10px;
+    margin-top: 30px;
+}
+.info-msg
+{
+    line-height: 40px;
+    font-size: 18px;
+}
+.info-title
+{
+    font-size: 24px;
+    border-bottom: solid 1px gray;
+}
+div#info-time
+{
+    float: left;
+    min-width: 200px;
+    max-width: 260px;
+}
+div#info-content
+{
+    float: left;
+    max-width: 520px;
+    min-width: 400px;
+}
+/*
+{
+{"status":3,"message":"","errCode":0,"data":[
+    {"time":"2019-03-28 05:10","context":"在安庆市进行到件扫描"},
+    {"time":"2019-03-28 12:10","context":"已到达贵州省贵阳市公司，上一站是安庆市中心"},
+    {"time":"2019-03-28 12:58","context":"已到达贵州省贵阳市公司，上一站是安庆市中心"},
+    {"time":"2019-03-28 16:14","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-28 21:00","context":"已发往贵州省贵阳市分拔中心"},
+    {"time":"2019-03-29 06:12","context":"已到达贵州省贵阳市公司，上一站是安庆市中心"},
+    {"time":"2019-03-29 17:36","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-30 00:21","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-30 08:17","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-30 17:21","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-31 05:57","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-03-31 12:42","context":"已到达贵州省贵阳市公司，上一站是安庆市中心"},
+    {"time":"2019-04-01 01:18","context":"在安庆市进行下级地点扫描，将发往：贵州省贵阳市"},
+    {"time":"2019-04-01 03:00","context":"郴州市公司的派件员正在派件"},
+    {"time":"2019-04-01 04:12","context":"快递签收扫描，签收人是：，签收网点是郴州市分公司"}
+],"html":"","mailNo":"9894935914194","expTextName":"中国邮政","expSpellName":"pingyou","ord":"ASC","tel":"11185"}}
+*/

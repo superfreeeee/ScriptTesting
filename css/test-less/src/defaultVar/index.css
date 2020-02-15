@@ -1,0 +1,17 @@
+/* 默認變量 by test.less */
+/* 默認變量 by default.less */
+.c12 .primary {
+  color: #0091ff;
+}
+.c12 .danger {
+  color: #ff2929;
+}
+.c12 .success {
+  color: #5aff6d;
+}
+.c13 .success {
+  color: #000000;
+}
+.c13 .success2 {
+  color: #000000;
+}
